@@ -83,7 +83,7 @@ async def UTUMLBT():
                     logging.info("Floodwait!\n\nSleeping for %s...", f.seconds)
                     sleep(f.seconds + 10)
             await user_bot.edit_message(int(chnl_id), int(msg_id), edit_text)
-            k = pytz.timezone("Asia/Kolkata")
+            k = pytz.timezone("Asia/Rangoon")
             month = dt.now(k).strftime("%B")
             day = dt.now(k).strftime("%d")
             year = dt.now(k).strftime("%Y")
