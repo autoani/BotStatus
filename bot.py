@@ -36,7 +36,7 @@ except Exception as e:
     logging.info(f"ERROR\n{e}")
 
 
-async def BotzHub():
+async def UTUMLBT():
     async with user_bot:
         while True:
             logging.info("[INFO] starting to check uptime..")
@@ -44,10 +44,10 @@ async def BotzHub():
                 await user_bot.edit_message(
                     int(chnl_id),
                     msg_id,
-                    "**@utumirrorleeech Bots Stats.**\n\n`Performing a periodic check...`",
+                    "**@UTUMLBT Bots Stats.**\n\n`Performing a periodic check...`",
                 )
             c = 0
-            edit_text = "**@utumirrorleeech Bots Stats.**\n\n"
+            edit_text = "**@UTUMLBT Bots Stats.**\n\n"
             for bot in bots:
                 try:
                     logging.info(f"[INFO] checking @{bot}")
