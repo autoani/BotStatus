@@ -97,7 +97,7 @@ async def UTUMLBT():
 
 
 try:
-    user_bot.loop.run_until_complete(utumirrorleeech())
+    user_bot.loop.run_until_complete(UTUMLBT())
     user_bot.disconnect()  # try prevent AuthKeyDuplicatedError
 except AuthKeyDuplicatedError:
     logging.warning("Session expired. Create a new one.")
