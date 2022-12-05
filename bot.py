@@ -31,7 +31,7 @@ try:
     bots = botlist.split()
     session_name = str(session)
     user_bot = TelegramClient(StringSession(session_name), appid, apihash)
-    logging.info("\n\nStarted.\nVisit @BotzHuB!")
+    logging.info("\n\nStarted.\nVisit @utumirrorleeech!")
 except Exception as e:
     logging.info(f"ERROR\n{e}")
 
@@ -44,10 +44,10 @@ async def BotzHub():
                 await user_bot.edit_message(
                     int(chnl_id),
                     msg_id,
-                    "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`",
+                    "**@utumirrorleeech Bots Stats.**\n\n`Performing a periodic check...`",
                 )
             c = 0
-            edit_text = "**@BotzHub Bots Stats.**\n\n"
+            edit_text = "**@utumirrorleeech Bots Stats.**\n\n"
             for bot in bots:
                 try:
                     logging.info(f"[INFO] checking @{bot}")
@@ -97,7 +97,7 @@ async def BotzHub():
 
 
 try:
-    user_bot.loop.run_until_complete(BotzHub())
+    user_bot.loop.run_until_complete(utumirrorleeech())
     user_bot.disconnect()  # try prevent AuthKeyDuplicatedError
 except AuthKeyDuplicatedError:
     logging.warning("Session expired. Create a new one.")
